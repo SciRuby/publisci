@@ -16,7 +16,7 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "publisci"
   gem.homepage = "http://github.com/wstrinz/publisci"
-  gem.license = "MIT"
+  gem.license = "BSD 2-Clause"
   gem.summary = %Q{Publish scientific results to the semantic web}
   gem.description = %Q{A toolkit for publishing scientific results and datasets using RDF, OWL, and related technologies }
   gem.email = "wstrinz@gmail.com"
