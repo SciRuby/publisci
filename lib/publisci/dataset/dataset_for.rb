@@ -28,7 +28,12 @@ module PubliSci
           end
 
           if reader_registry.keys.include? extension
-            reader_registry[extension].new.automatic(object,options,ask_on_ambiguous)
+            k = reader_registry[extension]
+            if k.respond_to? "automatic"
+              reader_registry[extension].automatic(object,options,ask_on_ambiguous)
+            else
+              reader_registry[extension].new.automatic(object,options,ask_on_ambiguous)
+            end
           else
             case extension
             when ".RData"

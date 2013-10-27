@@ -2,9 +2,7 @@
 
 [![Build Status](https://travis-ci.org/wstrinz/publisci.png?branch=master)](https://travis-ci.org/wstrinz/publisci)
 
-Full description goes here
-
-Note: this software is under active development!
+Note: this software is under active development! Until it hits v 1.0.0, the overall API and usage pattern is subject to change.
 
 ## Installation
 
@@ -82,6 +80,14 @@ generate_n3
 
 The API doc is online. For more code examples see the test files in
 the source tree.
+
+### Custom Parsers
+
+Building a parser simply requires you to implement a `generate_n3` method, either at the class or instance level. Then register it using `Publisci::Dataset.register_reader(extension, class)` using your reader's preferred file extension and its class. This way, if you call the `Dataset.for` method on a file with the given extension it will use your reader class.
+
+Including or extending the `Publisci::Readers::Base` will give you access to many helpful methods for creating a triplifying your data. There is a post on the [project blog](http://gsocsemantic.wordpress.com/2013/08/31/parsing-with-publisci-how-to-get-your-data-into-the-semantic-web/) with further details about how to design and implement a parser.
+
+The interface is in the process of being more rigdly defined to separate parsing, generation, and output, and it is advisable to you make your parsing code as stateless as possible for better handling of large inputs. Pull requests with parsers for new formats are greatly appreciated however!
 
 ## Project home page
 

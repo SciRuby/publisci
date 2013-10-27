@@ -1,6 +1,6 @@
 module PubliSci
   module Readers
-    class Base
+    module Base
       include PubliSci::Query
       include PubliSci::RDFParser
       include PubliSci::Analyzer

@@ -1,20 +1,20 @@
-@base <http://onto.strinz.me/dc/dataset/MAF_jkk9fu/> .
-@prefix ns:    <http://onto.strinz.me/dc/dataset/MAF_jkk9fu/> .
+@base <http://onto.strinz.me/dc/dataset/MAF_5sll3o/> .
+@prefix ns:    <http://onto.strinz.me/dc/dataset/MAF_5sll3o/> .
 @prefix qb:    <http://purl.org/linked-data/cube#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix prop:  <http://onto.strinz.me/properties/> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix cs:    <http://onto.strinz.me/dc/dataset/MAF_jkk9fu/cs/> .
-@prefix code:  <http://onto.strinz.me/dc/dataset/MAF_jkk9fu/code/> .
+@prefix cs:    <http://onto.strinz.me/dc/dataset/MAF_5sll3o/cs/> .
+@prefix code:  <http://onto.strinz.me/dc/dataset/MAF_5sll3o/code/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf:     <http://xmlns.com/foaf/0.1/> .
 @prefix org:      <http://www.w3.org/ns/org#> .
 @prefix prov:     <http://www.w3.org/ns/prov#> .
 
-ns:dsd-MAF_jkk9fu a qb:DataStructureDefinition;
+ns:dsd-MAF_5sll3o a qb:DataStructureDefinition;
   qb:component cs:Variant_Classification ;
   qb:component cs:Variant_Type ;
   qb:component cs:dbSNP_Val_Status ;
@@ -52,9 +52,9 @@ ns:dsd-MAF_jkk9fu a qb:DataStructureDefinition;
   qb:component cs:patient_id ;
   qb:component cs:sample_id .
 
-ns:dataset-MAF_jkk9fu a qb:DataSet ;
-  rdfs:label "MAF_jkk9fu"@en ;
-  qb:structure ns:dsd-MAF_jkk9fu .
+ns:dataset-MAF_5sll3o a qb:DataSet ;
+  rdfs:label "MAF_5sll3o"@en ;
+  qb:structure ns:dsd-MAF_5sll3o .
 
 cs:Variant_Classification a qb:ComponentSpecification ;
   rdfs:label "Variant_Classification" ;
@@ -951,7 +951,7 @@ code:sequencer a skos:ConceptScheme;
   skos:inScheme code:sequencer .
 
 ns:obs2 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Missense_Mutation> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/> ;
@@ -986,7 +986,7 @@ ns:obs2 a qb:Observation ;
   .
 
 ns:obs3 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Missense_Mutation> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/byFrequency> ;
@@ -1021,7 +1021,7 @@ ns:obs3 a qb:Observation ;
   .
 
 ns:obs4 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Missense_Mutation> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/> ;
@@ -1057,7 +1057,7 @@ ns:obs4 a qb:Observation ;
   .
 
 ns:obs5 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Silent> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/> ;
@@ -1093,7 +1093,7 @@ ns:obs5 a qb:Observation ;
   .
 
 ns:obs6 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Silent> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/> ;
@@ -1128,7 +1128,7 @@ ns:obs6 a qb:Observation ;
   .
 
 ns:obs7 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Missense_Mutation> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/> ;
@@ -1168,7 +1168,7 @@ ns:obs7 a qb:Observation ;
   .
 
 ns:obs8 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Silent> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/> ;
@@ -1208,7 +1208,7 @@ ns:obs8 a qb:Observation ;
   .
 
 ns:obs9 a qb:Observation ;
-  qb:dataSet ns:dataset-MAF_jkk9fu ;
+  qb:dataSet ns:dataset-MAF_5sll3o ;
   prop:Variant_Classification <code/variant_classification/Nonsense_Mutation> ;
   prop:Variant_Type <code/variant_type/SNP> ;
   prop:dbSNP_Val_Status <code/dbsnp_val_status/> ;

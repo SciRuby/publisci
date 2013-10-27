@@ -1,7 +1,9 @@
 module PubliSci
   module Readers
-    class MAF < Base
-      def generate_n3(input_file, options={})
+    class MAF
+      extend PubliSci::Readers::Base
+
+      def self.generate_n3(input_file, options={})
         input_file = open(input_file,'r')
 
         out_base = options[:output_base] || File.basename(input_file,'.*')

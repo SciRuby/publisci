@@ -45,7 +45,7 @@ class MafQuery
     end
 
     def generate_data
-    	generator = PubliSci::Readers::MAF.new
+    	generator = PubliSci::Readers::MAF
     	in_file = 'resources/maf_example.maf'
     	f = Tempfile.new('graph')
     	f.close

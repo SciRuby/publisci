@@ -7,7 +7,7 @@ require 'tempfile'
 
 describe PubliSci::Readers::MAF do
   before(:each) do
-    @generator = PubliSci::Readers::MAF.new
+    @generator = PubliSci::Readers::MAF
     @in_file = 'resources/maf_example.maf'
   end
 

@@ -1,6 +1,7 @@
 module PubliSci
 	module Readers
-		class CSV < Base
+		class CSV
+      include Base
       def automatic(file=nil,dataset_name=nil,options={},interactive=true)
         #to do
         # puts "f #{file} \n ds #{dataset_name} opts #{options}"
